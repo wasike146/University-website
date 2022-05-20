@@ -1,0 +1,14 @@
+{% load static %}
+<nav>
+  <div class="containerCss nav__container">
+      <a href="{% url 'home' %}"><h4>WASIKE</h4></a>
+      <Ul class="nav__menu">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="{% url 'login' %}">Log out</a></li>
+      </Ul>
+  </div>
+</nav>

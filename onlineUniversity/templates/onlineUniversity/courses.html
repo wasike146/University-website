@@ -1,0 +1,26 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="coursesSection">
+    <div class="containerCss courses2_container">
+        {% for course in course %}
+        <article class="courses2">
+        <div class="course_infor">
+                <h4>{{ course.title }}</h4>
+
+                <div class="courses_image">
+                    <img src="{{ course.thumbnail.url }}" style="border-radius: 2rem;" alt="">
+                </div>
+            <p>
+                {{ course.description }}
+            </p>
+            <a href="" class="btn btn-primary">Learn More</a>
+        </div>
+    </article>
+        {% endfor %}
+
+       
+  </div>
+  </section>
+{% endblock%}

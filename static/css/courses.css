@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-warnig:#f75842;
+    --color-danger:#f75842;
+    --color-danger-variant:rgb(247,88,66,0.4);
+    --color-white: #ffff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --container-width-1g:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --translation:all 400ms ease; 
+}
+body{
+    font-family:"montseret",sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+.containerCss{
+    width: var(--container-width-1g);
+    margin: 0 auto;
+}
+section{
+    padding: 6rem 0;
+
+}
+section h2{
+    text-align: center;
+    margin-bottom: 4rem ;
+}
+h1 h2 h3 h4 h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+a {
+    list-style: none;
+    color: var(--color-white);
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit:cover ;
+}
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+.btn:hover{
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*=================================courses=====================*/
+.coursesSection {
+    position: relative;
+    top: 5rem;
+}
+.courses2_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.courses2{
+    background: var(--color-bg1);
+    text-align: center;
+    border-radius: 5rem;
+}
+.courses2:hover{
+    background: transparent;
+    background-color: var(--color-primary);
+    transition: var(--translation);
+}
+.course_infor{
+    padding: 2rem;
+}
+.course_infor p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
